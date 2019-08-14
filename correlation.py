@@ -28,6 +28,7 @@ def correlation_coefficient(x, y):
 
         return sigma
     
+    # testing testing
     def cov(z0,z1):
         z = list(zip(z0,z1))
         n = len(z)
