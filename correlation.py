@@ -1,15 +1,15 @@
 import math
 
 
-
 def correlation_coefficient(x, y):
     r = 0
 
+    # created my own function for average
     def average(z):
         z_ave = []
         n = len(z)
 
-        # for i, j in enumerate(z):
+        # for i, j in enumerate(z): (test code, disregard)
         for j in z:
             z_ave.append(j)
         
@@ -17,6 +17,7 @@ def correlation_coefficient(x, y):
 
         return z_ave
 
+    # created my own function for standard dev
     def std_dev(z):
         sigma = []
         n = len(z)
@@ -28,7 +29,7 @@ def correlation_coefficient(x, y):
 
         return sigma
     
-    # testing testing
+    # created my own function for cov 
     def cov(z0,z1):
         z = list(zip(z0,z1))
         n = len(z)
